@@ -97,3 +97,17 @@ _Compiled from scout reports; verbatim query strings._
 - "physics-informed neural network cardiac digital twin clinical 2025 electrophysiology"
 - "physics-informed neural networks oil and gas industry application 2025"
 - (3 further queries were aborted by tool concurrency limits and re-issued within the above set; verification done via Semantic Scholar + Crossref APIs.)
+
+## Slice F
+
+- physics-informed neural networks additive manufacturing melt pool review
+- Goswami transfer learning enhanced physics-informed neural networks phase field modeling fracture CMAME
+- physics-informed neural networks option pricing Black-Scholes 2023 2024
+- physics-informed neural networks manufacturing survey 2024 2025 Vidyarthi
+- Goswami physics-informed neural networks phase field modeling fracture transfer learning CMAME 2020
+- Montes de Oca Zapiain Stewart Dingreville physics-informed neural networks microstructure evolution npj Computational Materials
+- NVIDIA Modulus PhysicsNeMo physics-ML industrial deployment case study
+- physics-informed neural networks elastoplasticity path-dependent constitutive solid mechanics journal
+- Vidyarthi physics-informed machine learning manufacturing review survey
+- physics-informed deep learning Hamilton-Jacobi-Bellman option pricing local volatility Quantitative Finance
+- Faegh "physics-informed machine learning" additive manufacturing process monitoring review Journal of Intelligent Manufacturing 2025

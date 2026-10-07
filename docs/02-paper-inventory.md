@@ -10,11 +10,11 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 | Metric | Value |
 |---|---|
-| Unique verified papers | 92 |
-| Journal / conference / preprint | 73 / 14 / 5 |
-| Year distribution | 2018: 1, 2019: 1, 2020: 7, 2021: 16, 2022: 12, 2023: 11, 2024: 18, 2025: 18, 2026: 8 |
-| Distinct venues | 64 |
-| Cross-slice papers (surfaced by 2+ scouts) | 2 |
+| Unique verified papers | 106 |
+| Journal / conference / preprint | 84 / 14 / 6 |
+| Year distribution | 2018: 2, 2019: 1, 2020: 10, 2021: 18, 2022: 13, 2023: 11, 2024: 21, 2025: 19, 2026: 11 |
+| Distinct venues | 75 |
+| Cross-slice papers (surfaced by 2+ scouts) | 3 |
 
 ## 1. Foundations, theory & training methodology (slice A)
 
@@ -135,7 +135,22 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 ## 6. Materials, manufacturing, finance & industrial ecosystem (slice F)
 
-_Slice F pending._
+| ID | Domain | Physics enforced | Mechanism | Problem | Cites | Read |
+|---|---|---|---|---|---|---|
+| PINN-F01 | Fracture-phase-field materials | Phase-field evolution PDE + quasi-static brittle fracture energy balance | PDE residual loss with transfer learning from intact material | forward | ~888 | must-read |
+| PINN-F03 | Melt pool additive manufacturing | Heat transport + incompressible Navier-Stokes for melt pool | PDE residual loss plus transfer learning to new parameters | forward | ~465 | must-read |
+| PINN-F08 | AM process-structure-property | Surveyed thermomechanical heat transfer and stress physics | Survey of residual and architecture-embedded physics | deployment | ~135 | must-read |
+| PINN-F02 | Microstructure evolution materials | Cahn-Hilliard spinodal decomposition (data-driven surrogate not residual PINN) | Supervised CNN on phase-field snapshots (no residual) | operator | ~233 | careful |
+| PINN-F04 | Elastoplasticity geomechanics | Incremental elasticity + additive strain decomposition + plastic admissibility | Physics-constrained loss (EPNN) on constitutive residuals | forward | ~103 | careful |
+| PINN-F05 | von Mises elastoplasticity | Equilibrium PDE + von Mises J2 flow theory | Strong-form residual and weak-form virtual-work losses | forward | ~6 | careful |
+| PINN-F10 | Finance/general PDEs | PDE residual (diffusion-reaction: Burgers Allen-Cahn elliptic) | Deep Galerkin residual minimization by SGD | forward | ~2673 | careful |
+| PINN-F11 | Optimal control finance | Hamilton-Jacobi-Bellman PDE for value function | HJB residual loss with adaptive collocation sampling | forward | ~169 | careful |
+| PINN-F06 | Elastoplasticity | Elastoplastic equilibrium with path-dependent constitutive laws | Physics-informed neural operator residuals | operator | n/a | methods+results |
+| PINN-F07 | AM process monitoring | Surveyed thermal and melt-pool physics in PIML monitors | Survey of residual and hybrid enforcement | deployment | ~27 | methods+results |
+| PINN-F13 | PINN software ecosystem | User-defined governing equations via functional API | Functional composition of NN and PDE residuals in Keras | deployment | ~394 | methods+results |
+| PINN-F14 | Industrial physics-ML framework | Configurable PDE residuals (PINN FNO hybrid) | Framework support for residual and operator losses at GPU scale | deployment | n/a | methods+results |
+| PINN-F09 | Laser AM lifecycle | Surveyed melt-pool thermal-fluid physics across lifecycle | Lifecycle taxonomy of PIML enforcement | deployment | ~0 | skim |
+| PINN-F15 | Option pricing finance | Black-Scholes PDE residual | Residual plus boundary and terminal condition losses | pricing | n/a | reference |
 
 ## 7. Existing reviews & meta-landscape (slice G)
 

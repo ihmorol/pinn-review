@@ -35,9 +35,10 @@ plt.rcParams.update({
     "axes.grid": True, "grid.alpha": 0.15, "grid.linestyle": "-",
 })
 
-# Okabe-Ito (colorblind-safe) + two grays for extra buckets
+# Okabe-Ito (colorblind-safe) + extra distinct hues + grays (>= 11 domain buckets)
 COLORS = ["#0072B2", "#E69F00", "#009E73", "#D55E00", "#56B4E9",
-          "#CC79A7", "#F0E442", "#004949", "#8C8C8C", "#B0BEC5"]
+          "#CC79A7", "#F0E442", "#004949", "#9467BD", "#8C8C8C",
+          "#17BECF", "#B0BEC5", "#7F4F24"]
 
 SLICE_DOMAIN = {
     "A": "Methods & training", "B": "Architectures & operators",
@@ -111,7 +112,7 @@ def fig1_timeline(rows):
     for r in rows:
         if r["_year"] in years:
             counts[r["_domain"]][years.index(r["_year"])] += 1
-    fig, ax = plt.subplots(figsize=(6.75, 3.4))
+    fig, ax = plt.subplots(figsize=(6.75, 4.1))
     bottom = np.zeros(len(years))
     for i, d in enumerate(domains):
         vals = np.array(counts[d], dtype=float)
@@ -124,7 +125,7 @@ def fig1_timeline(rows):
     ax.set_xlabel("Publication year")
     ax.set_ylabel("Surveyed papers")
     ax.set_title("Verified dossier papers per year (pre-2021 = seminal anchors)")
-    ax.legend(ncol=3, loc="upper left", fontsize=7.5)
+    ax.legend(ncol=3, loc="upper center", bbox_to_anchor=(0.5, -0.13), fontsize=7.5)
     fig.savefig(FIGDIR / "fig1_timeline.png")
     plt.close(fig)
 
@@ -173,22 +174,39 @@ def fig3_mech(rows):
 def fig4_cites(rows):
     pts = [r for r in rows if r["_cites"] and r["_year"]]
     domains = sorted({r["_domain"] for r in pts})
-    fig, ax = plt.subplots(figsize=(6.75, 3.6))
+    fig, ax = plt.subplots(figsize=(6.75, 4.3))
     for i, d in enumerate(domains):
         xs = [r["_year"] for r in pts if r["_domain"] == d]
         ys = [r["_cites"] for r in pts if r["_domain"] == d]
         ax.scatter(xs, ys, s=26, color=COLORS[i % len(COLORS)], label=d,
                    alpha=0.75, edgecolors="white", linewidths=0.4)
     top = sorted(pts, key=lambda r: -r["_cites"])[:8]
-    for r in top:
-        short = r["title"][:34] + ("..." if len(r["title"]) > 34 else "")
-        ax.annotate(short, (r["_year"], r["_cites"]), fontsize=6.0,
-                    xytext=(3, 3), textcoords="offset points", color="#333")
+    ordered = []
+    for yr in sorted({r["_year"] for r in top}):
+        ordered += sorted((r for r in top if r["_year"] == yr), key=lambda r: -r["_cites"])
+    # Global gutter: labels stacked top-to-bottom with a guaranteed minimum gap,
+    # leader lines connecting each label to its true point.
+    callouts = [[i, r, float(r["_cites"])] for i, r in enumerate(ordered, 1)]
+    callouts.sort(key=lambda t: -t[2])
+    for j in range(1, len(callouts)):
+        if callouts[j][2] > callouts[j - 1][2] / 1.35:
+            callouts[j][2] = callouts[j - 1][2] / 1.35
+    for i, r, y_lab in callouts:
+        ax.annotate(f"({i})", xy=(r["_year"], r["_cites"]), xytext=(2027.0, y_lab),
+                    fontsize=7.5, weight="bold", color="#222", va="center",
+                    arrowprops=dict(arrowstyle="-", lw=0.6, color="#999", alpha=0.7),
+                    annotation_clip=False)
+    ax.set_xlim(2018.5, 2028.6)
     ax.set_yscale("log")
+    ax.margins(y=0.10)
     ax.set_xlabel("Publication year")
     ax.set_ylabel("Citations (approx., log scale)")
-    ax.set_title("Citations vs year — 8 most-cited labelled")
-    ax.legend(ncol=3, fontsize=6.8, loc="upper left")
+    ax.set_title("Citations vs year — numbered callouts for 8 most-cited")
+    ax.legend(ncol=3, fontsize=6.8, loc="upper center", bbox_to_anchor=(0.5, -0.13))
+    lines = ["  ".join(f"({i}) {r['title'][:40]}... {r['_year']}" if len(r['title']) > 40
+                       else f"({i}) {r['title']} {r['_year']}")
+             for i, r in enumerate(ordered, 1)]
+    fig.text(0.01, -0.24, "\n".join(lines), fontsize=6.2, color="#444", va="top")
     fig.savefig(FIGDIR / "fig4_citations.png")
     plt.close(fig)
 
@@ -207,8 +225,15 @@ def fig5_problem(rows):
     plt.close(fig)
 
 
+def norm_venue(v: str) -> str:
+    v = re.sub(r"\s*20\d{2}.*$", "", v).strip()
+    if v.lower().startswith("arxiv"):
+        return "arXiv preprint"
+    return v or "Unknown"
+
+
 def fig6_venues(rows):
-    c = Counter(r["venue"].strip() for r in rows if r.get("venue")).most_common(14)
+    c = Counter(norm_venue(r["venue"].strip()) for r in rows if r.get("venue")).most_common(14)
     labels = [k if len(k) <= 52 else k[:49] + "..." for k, _ in c][::-1]
     vals = [v for _, v in c][::-1]
     fig, ax = plt.subplots(figsize=(6.0, 4.2))
@@ -216,7 +241,7 @@ def fig6_venues(rows):
     for y, v in enumerate(vals):
         ax.text(v + 0.08, y, str(v), va="center", fontsize=8, color="#444")
     ax.set_xlabel("Papers in dossier")
-    ax.set_title("Most frequent venues (top 14)")
+    ax.set_title("Most frequent venues (top 14, normalized)")
     fig.savefig(FIGDIR / "fig6_venues.png")
     plt.close(fig)
 

@@ -138,7 +138,7 @@ def main() -> int:
                 note = f"{download(url, dest)} bytes"
                 status = "downloaded"
             elif m_doi:
-                time.sleep(1.2)
+                time.sleep(2.5)
                 oa_url, s2_arx = s2_lookup(m_doi.group(1))
                 ok = False
                 if oa_url:

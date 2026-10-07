@@ -1,0 +1,117 @@
+1	PINN-A01	PDF	Physics-informed neural networks: A deep learning framework 
+1	PINN-A03	PDF	Characterizing possible failure modes in physics-informed ne
+1	PINN-A04	PDF	Understanding and Mitigating Gradient Flow Pathologies in Ph
+1	PINN-A06	PDF	When and why PINNs fail to train: A neural tangent kernel pe
+1	PINN-A07	PDF	Self-adaptive physics-informed neural networks
+1	PINN-A10	PDF	An Expert's Guide to Training Physics-informed Neural Networ
+1	PINN-A15	PDF	Numerical analysis of physics-informed neural networks and r
+1	PINN-A17	failed	Physics-informed neural networks for PDE problems: a compreh
+1	PINN-B12	PDF	Learning nonlinear operators via DeepONet based on the unive
+1	PINN-B13	PDF	Fourier Neural Operator for Parametric Partial Differential 
+1	PINN-B14	PDF	Learning the solution operator of parametric partial differe
+1	PINN-B15	PDF	Physics-Informed Neural Operator for Learning Partial Differ
+1	PINN-C01	failed	Hidden fluid mechanics: Learning velocity and pressure field
+1	PINN-C02	PDF	Physics-informed neural networks (PINNs) for fluid mechanics
+1	PINN-C03	paywalled-no-oa	Physics-Informed Neural Networks for Heat Transfer Problems
+1	PINN-C04	PDF	Physics-informed neural networks for solving Reynolds-averag
+1	PINN-D01	PDF	Physics-Informed Neural Networks for Power Systems (Misyris 
+1	PINN-D05	paywalled-no-oa	Physics-informed neural networks for power systems: A system
+1	PINN-D06	failed	PINN for lithium-ion battery degradation stable modeling and
+1	PINN-D16	PDF	Enforcing Analytic Constraints in Neural Networks Emulating 
+1	PINN-D17	PDF	Neural general circulation models for weather and climate (K
+1	PINN-D18	failed	Physics-informed machine learning meets renewable energy sys
+1	PINN-E01	paywalled-no-oa	A physics-informed deep learning framework for inversion and
+1	PINN-E02	PDF	Physics-Informed Neural Networks (PINNs) for Wave Propagatio
+1	PINN-E05	PDF	EP-PINNs: Cardiac Electrophysiology Characterisation Using P
+1	PINN-E08	failed	Personalized predictions of Glioblastoma infiltration: Mathe
+1	PINN-F01	PDF	Transfer learning enhanced physics informed neural network f
+1	PINN-F03	PDF	Machine learning for metal additive manufacturing: predictin
+1	PINN-F08	no-identifier	A review on physics-informed machine learning for process-st
+1	PINN-G03	PDF	Scientific Machine Learning Through Physics-Informed Neural 
+2	PINN-A02	paywalled-no-oa	Estimates on the generalization error of physics-informed ne
+2	PINN-A05	PDF	On the eigenvector bias of Fourier feature networks: From re
+2	PINN-A08	PDF	A comprehensive study of non-adaptive and residual-based ada
+2	PINN-A09	PDF	DeepXDE: A Deep Learning Library for Solving Differential Eq
+2	PINN-A11	PDF	PINNacle: A Comprehensive Benchmark of Physics-Informed Neur
+2	PINN-A13	PDF	Can physics-informed neural networks beat the finite element
+2	PINN-A16	failed	Respecting causality for training physics-informed neural ne
+2	PINN-A19	PDF	Self-adaptive weights based on balanced residual decay rate 
+2	PINN-B05	PDF	Self-Adaptive Physics-Informed Neural Networks using a Soft 
+2	PINN-B06	failed	Conservative physics-informed neural networks on discrete do
+2	PINN-B09	PDF	Finite basis physics-informed neural networks (FBPINNs): a s
+2	PINN-B17	PDF	Transolver: A Fast Transformer Solver for PDEs on General Ge
+2	PINN-B18	PDF	Poseidon: Efficient Foundation Models for PDEs
+2	PINN-B19	PDF	B-PINNs: Bayesian Physics-Informed Neural Networks for Forwa
+2	PINN-C05	PDF	NSFnets (Navier-Stokes flow nets)
+2	PINN-C06	PDF	Physics-informed neural networks for inviscid transonic flow
+2	PINN-C08	paywalled-no-oa	Flight Dynamics Modeling Using Physics-Informed Neural Netwo
+2	PINN-C11	failed	Physics-informed deep learning for simultaneous surrogate mo
+2	PINN-C12	failed	Physics-informed neural network simulation of conjugate heat
+2	PINN-C13	failed	Physics-informed neural networks for heat transfer: A mechan
+2	PINN-D02	PDF	Physics-Informed Neural Networks for AC Optimal Power Flow (
+2	PINN-D07	failed	PINNs for State of Health Estimation in Lithium-Ion Batterie
+2	PINN-D08	paywalled-no-oa	Forward and inverse simulation of pseudo-two-dimensional mod
+2	PINN-D10	PDF	Physics informed neural networks for control oriented therma
+2	PINN-D11	failed	A review of physics-informed machine learning for building e
+2	PINN-D19	failed	Physics-informed neural networks in the energy sector: Progr
+2	PINN-E03	PDF	Physics-informed neural networks for solving nonlinear diffu
+2	PINN-E04	failed	Physics-Informed Neural Networks With Monotonicity Constrain
+2	PINN-E06	failed	Personalising left-ventricular biophysical models of the hea
+2	PINN-E07	failed	Physics-Informed Neural Networks for Brain Hemodynamic Predi
+2	PINN-E09	paywalled-no-oa	Recent advancements and applications of physics-informed mac
+2	PINN-E10	paywalled-no-oa	Meta-learning Physics-Informed Neural Networks for Personali
+2	PINN-E11	failed	Cardiovascular digital twins using a Windkessel physics info
+2	PINN-F02	failed	Accelerating phase-field-based microstructure evolution pred
+2	PINN-F04	PDF	A physics-informed deep neural network for surrogate modelin
+2	PINN-F05	failed	Physics-informed neural network frameworks in strong and wea
+2	PINN-F10	PDF	DGM: A deep learning algorithm for solving partial different
+2	PINN-F11	PDF	Adaptive Deep Learning for High Dimensional Hamilton-Jacobi-
+2	PINN-G02	failed	Physics-informed machine learning
+2	PINN-G04	PDF	Integrating Scientific Knowledge with Machine Learning for E
+2	PINN-G05	PDF	When physics meets machine learning: a survey of physics-inf
+3	PINN-A12	PDF	PDEBENCH: An Extensive Benchmark for Scientific Machine Lear
+3	PINN-A14	PDF	Generic bounds on the approximation error for physics-inform
+3	PINN-A18	PDF	On the convergence of PINNs
+3	PINN-B01	PDF	Implicit Neural Representations with Periodic Activation Fun
+3	PINN-B02	PDF	The Deep Ritz Method: A Deep Learning-Based Numerical Algori
+3	PINN-B07	PDF	Extended Physics-Informed Neural Networks (XPINNs): A Genera
+3	PINN-B08	PDF	hp-VPINNs: Variational Physics-Informed Neural Networks With
+3	PINN-B10	PDF	Multilevel domain decomposition-based architectures for phys
+3	PINN-B11	PDF	Weak Adversarial Networks for High-dimensional Partial Diffe
+3	PINN-B16	PDF	GNOT: A General Neural Operator Transformer for Operator Lea
+3	PINN-B20	PDF	Transolver++: An Accurate Neural Solver for PDEs on Million-
+3	PINN-B21	PDF	Physics-Informed Diffusion Models
+3	PINN-C07	paywalled-no-oa	Flow Reconstruction in a Transonic Turbine Cascade Using PIN
+3	PINN-C09	paywalled-no-oa	A physics-informed neural network-based aerodynamic paramete
+3	PINN-C10	failed	Physics-informed neural networks for transonic flow around a
+3	PINN-C14	paywalled-no-oa	A Physics-Informed Neural Network for Solving the Inverse He
+3	PINN-C15	paywalled-no-oa	Physics-informed neural network for predicting multi-row fil
+3	PINN-C16	paywalled-no-oa	Prediction of porous media fluid flow using physics informed
+3	PINN-C17	PDF	Prediction of fluid flow in porous media by sparse observati
+3	PINN-D03	PDF	Robust Power System State Estimation using Physics-Informed 
+3	PINN-D04	PDF	KCLNet: Physics-Informed Power Flow Prediction via Constrain
+3	PINN-D09	paywalled-no-oa	PINN surrogate of Li-ion battery models for parameter infere
+3	PINN-D12	paywalled-no-oa	PINNs for the point kinetics equations for nuclear reactor d
+3	PINN-D13	failed	TL-PINN based on domain similarity measurement for nuclear r
+3	PINN-E12	PDF	Physics-Informed Neural Networks with skip connections for m
+3	PINN-E14	failed	A Physics-Informed Neural Network for the Nonlinear Damage I
+3	PINN-F06	PDF	Plasolver: Physics-Informed Neural Operators for Elastoplast
+3	PINN-F07	paywalled-no-oa	A review on physics-informed machine learning for monitoring
+3	PINN-F13	PDF	SciANN: A Keras/TensorFlow wrapper for scientific computatio
+3	PINN-F14	no-pdf-webpage	NVIDIA PhysicsNeMo (successor to Modulus)
+3	PINN-G06	no-identifier	Physics-Guided, Physics-Informed, and Physics-Encoded Neural
+3	PINN-G07	PDF	Physics-Informed Machine Learning: A Survey on Problems, Met
+3	PINN-G09	PDF	Neural Operator: Learning Maps Between Function Spaces
+3	PINN-G10	paywalled-no-oa	Architectures, variants, and performance of neural operators
+4	PINN-A20	paywalled-no-oa	Physics-Informed Neural Networks in Computational Mechanics:
+4	PINN-B22	PDF	From Theory to Application: A Practical Introduction to Neur
+4	PINN-B23	PDF	Large language models for partial differential equation work
+4	PINN-C18	PDF	Sound propagation in realistic interactive 3D scenes with pa
+4	PINN-D14	failed	KAPNet: A physics-informed neural network with physical cons
+4	PINN-D15	failed	Physics-guided neural network integrating uncertainty evolut
+4	PINN-E13	failed	Physics-informed neural network modelling of uplift behaviou
+4	PINN-F09	failed	Review of physics-informed machine learning in laser metal a
+4	PINN-G11	PDF	Operator Learning: A Statistical Perspective
+4	PINN-G12	failed	Physics-Informed Neural Network (PINN) Evolution and Beyond:
+4	PINN-G13	PDF	Physics-Informed Machine Learning in Biomedical Science
+5	PINN-F15	no-pdf-webpage	Physics-Informed Neural Networks for Option Pricing

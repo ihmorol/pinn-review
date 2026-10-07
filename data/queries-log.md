@@ -111,3 +111,18 @@ _Compiled from scout reports; verbatim query strings._
 - Vidyarthi physics-informed machine learning manufacturing review survey
 - physics-informed deep learning Hamilton-Jacobi-Bellman option pricing local volatility Quantitative Finance
 - Faegh "physics-informed machine learning" additive manufacturing process monitoring review Journal of Intelligent Manufacturing 2025
+
+## Slice G
+
+- physics-informed neural networks survey 2025 review
+- scientific machine learning review 2026 physics-informed
+- physics-informed neural networks bibliometric analysis CiteSpace
+- neural operator learning survey 2025 scientific computing
+- site:link.springer.com s10462 physics-informed
+- Faroughi physics-guided physics-informed physics-encoded neural networks operators survey venue
+- "Artificial Intelligence Review" "physics-informed" neural networks review s10462 2025 2026
+- Willard "Integrating physics-based modeling with machine learning" ACM Computing Surveys DOI
+- Grossmann "Can physics-informed neural networks beat the finite element method" IMA Journal
+- "Nature Reviews Physics" "Journal of Scientific Computing" "Nature Machine Intelligence" impact factor 2024
+- "Journal of Computational Physics" "Physics of Fluids" "Applied Energy" impact factor 2024 CiteScore
+- (+ Semantic Scholar API DOI lookups; Crossref API bibliographic queries; S2 hit persistent HTTP 429 for title searches)

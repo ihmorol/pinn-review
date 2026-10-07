@@ -10,11 +10,11 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 | Metric | Value |
 |---|---|
-| Unique verified papers | 106 |
+| Unique verified papers | 117 |
 | Journal / conference / preprint | 84 / 14 / 6 |
-| Year distribution | 2018: 2, 2019: 1, 2020: 10, 2021: 18, 2022: 13, 2023: 11, 2024: 21, 2025: 19, 2026: 11 |
-| Distinct venues | 75 |
-| Cross-slice papers (surfaced by 2+ scouts) | 3 |
+| Year distribution | 2018: 2, 2019: 1, 2020: 10, 2021: 19, 2022: 17, 2023: 12, 2024: 22, 2025: 21, 2026: 13 |
+| Distinct venues | 85 |
+| Cross-slice papers (surfaced by 2+ scouts) | 5 |
 
 ## 1. Foundations, theory & training methodology (slice A)
 
@@ -33,7 +33,7 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 | PINN-A08 | **A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks** | 2023 | Computer Methods in Applied Mechanics and Engineering | journal | ~1142 (GS-snippet) | careful |
 | PINN-A09 | **DeepXDE: A Deep Learning Library for Solving Differential Equations** | 2021 | SIAM Review | journal | ~3835 (GS-snippet) | careful |
 | PINN-A11 | **PINNacle: A Comprehensive Benchmark of Physics-Informed Neural Networks for Solving PDEs** | 2023 | NeurIPS 2024 Datasets and Benchmarks (arXiv 2023) | conference | n/a | careful |
-| PINN-A13 | **Can physics-informed neural networks beat the finite element method?** | 2024 | IMA Journal of Applied Mathematics | journal | n/a | careful |
+| PINN-A13 | **Can physics-informed neural networks beat the finite element method?** | 2024 | IMA Journal of Applied Mathematics | journal | ~197 | careful |
 | PINN-A16 | **Respecting causality for training physics-informed neural networks** | 2024 | Computer Methods in Applied Mechanics and Engineering | journal | n/a | careful |
 | PINN-A19 | **Self-adaptive weights based on balanced residual decay rate for physics-informed neural networks and deep operator networks** | 2025 | Journal of Computational Physics | journal | n/a | careful |
 | PINN-A12 | **PDEBENCH: An Extensive Benchmark for Scientific Machine Learning** | 2022 | NeurIPS 2022 Datasets and Benchmarks | conference | n/a | methods+results |
@@ -154,7 +154,19 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 ## 7. Existing reviews & meta-landscape (slice G)
 
-_Slice G pending._
+| ID | Paper | Year | Venue | Type | Cites | Read |
+|---|---|---|---|---|---|---|
+| PINN-G03 | **Scientific Machine Learning Through Physics-Informed Neural Networks: Where we are and What's Next** | 2022 | Journal of Scientific Computing | journal-review | ~2857 | must-read |
+| PINN-G02 | **Physics-informed machine learning** | 2021 | Nature Reviews Physics | position-review | ~8842 | careful |
+| PINN-G04 | **Integrating Scientific Knowledge with Machine Learning for Engineering and Physical Systems** | 2022 | ACM Computing Surveys | journal-review | ~1352 | careful |
+| PINN-G05 | **When physics meets machine learning: a survey of physics-informed machine learning** | 2025 | Machine Learning for Computational Science and Engineering | journal-review | ~309 | careful |
+| PINN-G06 | **Physics-Guided, Physics-Informed, and Physics-Encoded Neural Networks and Operators in Scientific Computing: Fluid and Solid Mechanics** | 2024 | J. Computing and Information Science in Engineering | journal-review | n/a | methods+results |
+| PINN-G07 | **Physics-Informed Machine Learning: A Survey on Problems, Methods and Applications** | 2022 | arXiv | preprint-survey | n/a | methods+results |
+| PINN-G09 | **Neural Operator: Learning Maps Between Function Spaces** | 2023 | J. Machine Learning Research | framework-survey | n/a | methods+results |
+| PINN-G10 | **Architectures, variants, and performance of neural operators: A comparative review** | 2025 | Neurocomputing | journal-review | ~24 | methods+results |
+| PINN-G11 | **Operator Learning: A Statistical Perspective** | 2026 | Annual Review of Statistics and Its Application | journal-review | ~3 | skim |
+| PINN-G12 | **Physics-Informed Neural Network (PINN) Evolution and Beyond: A Systematic Literature Review and Bibliometric Analysis** | 2022 | Big Data and Cognitive Computing | systematic-review/bibliometric | ~271 | skim |
+| PINN-G13 | **Physics-Informed Machine Learning in Biomedical Science** | 2026 | Annual Review of Biomedical Engineering | journal-review | ~43 | skim |
 
 
 ## Reading-depth legend

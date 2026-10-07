@@ -47,8 +47,14 @@ pinn-review/
 |------|--------|
 | Research brief frozen (RQ1–RQ4) | done |
 | 7 scout slices dispatched (theory / architectures / fluids / energy / biomed+geo / materials+finance / meta-reviews) | done |
-| Scout reports & verification | in progress |
-| Consolidation, figures, dossier documents | pending |
+| Scout reports & verification (117 unique papers, 109 fully verified) | done |
+| Consolidation pipeline (CSV → inventory MD → bib → figures) | done |
+| Dossier documents (search log, comparative analysis, findings, roadmap, blueprint) | done |
+| Next: manuscript drafting per `docs/06-manuscript-blueprint-AIR.md` | pending |
+
+Headline findings: see `docs/04-findings-and-conclusions.md`. Reading order for a solo
+reviewer: `docs/05-reading-roadmap.md`.
 
 > Working documents: citation counts are approximate (Semantic Scholar / Google Scholar
-> snapshots, 2026-10-06) and every record carries a verification flag.
+> snapshots, 2026-10-06/07) and every record carries a verification flag (109/117 fully
+> verified; 8 quarantined with `verified: N`).

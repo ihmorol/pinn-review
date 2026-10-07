@@ -50,7 +50,20 @@ Machine-compiled verbatim query strings per slice: [`data/queries-log.md`](../da
 
 ## 3. Selection counts (PRISMA-style, coarse)
 
-_Filled after consolidation: candidates screened → duplicates removed → verified → included._
+| Slice | Screened | Included | Notable exclusions (verification-driven) |
+|---|---|---|---|
+| A foundations/theory | 26 | 19 (+1 anchor) | RADAR & Nabian–Gladisch unverifiable → dropped; PDEArena out-of-scope |
+| B architectures/operators | ~31 | 23 | Tancik 2020 folded into B04 (anchor budget) |
+| C fluids/aero/thermal | 28 | 18 | — |
+| D energy/power/climate | 24 | 19 | — |
+| E biomed/geo/civil | ~24 | 14 | "Friha et al." healthcare survey NOT FOUND in Crossref/S2 → excluded; Kadeethum attribution corrected (PLOS ONE 2020) |
+| F materials/mfg/finance/ecosystem | ~25 | 15 (13 + 2 vendor webpages) | "Vidyarthi et al." manufacturing survey unverifiable → dropped; Goswami venue corrected (TAFMEC, not CMAME) |
+| G reviews/meta | 17 | 13 | Luo 2025 (G01) merged into A17; Grossmann 2024 (G08) merged into A13 — cross-slice duplicates |
+| **Total (unique after cross-slice merge)** | **~175** | **117** | 109 fully verified / 8 flagged `verified: N` (quarantined) |
+
+Cross-slice duplicates (e.g., Wang et al. SIAM JSC gradient-pathologies paper surfaced by
+both A and B) are merged into single inventory rows with `slices = A+B`.
+
 
 ## 4. Known limitations
 

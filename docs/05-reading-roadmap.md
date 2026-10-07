@@ -1,7 +1,7 @@
 # Reading Roadmap — Ranked Order for a Solo Reviewer
 
-**Basis:** priority scores from the verified inventory (92+ papers); citation mass;
-component coverage; domain exemplarity; recency. Refresh after slices F/G land.
+**Basis:** priority scores from the verified inventory (117 papers); citation mass;
+component coverage; domain exemplarity; recency.
 
 ## How papers were ranked
 
@@ -22,7 +22,7 @@ Read **in this order**, in full, with notes:
 | # | ID | Paper | Why now | Est. |
 |---|---|---|---|---|
 | 1 | PINN-A01 | Raissi et al. 2019, *J. Comput. Phys.* (the original, ~21k cites) | the definition of everything | 2.5 h |
-| 2 | PINN-G01 | Karniadakis et al. 2021, *Nature Reviews Physics* "Physics-informed machine learning" (slice G) | the field's own framing | 2 h |
+| 2 | PINN-G02 | Karniadakis et al. 2021, *Nature Reviews Physics* "Physics-informed machine learning" | the field's own framing | 2 h |
 | 3 | PINN-A03 | Krishnapriyan et al., NeurIPS 2021 — failure modes | why vanilla training breaks | 2 h |
 | 4 | PINN-A04 | Wang et al., SIAM JSC 2021 — gradient pathologies (= slice B record) | the weighting problem, stated | 2 h |
 | 5 | PINN-A06 | Wang et al. 2022, *JCP* — NTK perspective on training failure | the diagnosis tool | 2.5 h |
@@ -72,7 +72,8 @@ Read **in this order**, in full, with notes:
 | 34 | PINN-B18 | Poseidon, NeurIPS 2024 | PDE foundation models |
 | 35 | PINN-B17/B20 | Transolver / Transolver++ | million-scale industrial meshes |
 | 36 | PINN-B21 | Physics-informed diffusion models, ICLR 2025 | frontier |
-| 37 | slice G reviews (Karniadakis aside) + slice F picks | positioning pass | skim protocol |
+| 37 | PINN-G03, G04, G05, G10 | Cuomo 2022 · Willard 2022 · 2025 PIML survey · neural-operator review | positioning pass (skim protocol) | 3 h |
+| 38 | slice F picks (F01, F03, F10) | materials/mfg/finance exemplars | methods+results | 2.5 h |
 
 ## The 15-minute skim protocol (weeks 3–4)
 

@@ -1,7 +1,7 @@
 # Manuscript Blueprint — PINN Survey for *Artificial Intelligence Review*
 
-**Status:** working draft (v0.1, 2026-10-06). Positioning and gap claims are provisional
-until scout G's survey-landscape analysis lands (`research-notes/slice-G-reviews-meta.md`).
+**Status:** v1.0 (2026-10-07). Positioning below is grounded in slice G's verification of
+the review landscape (13 reviews; `research-notes/slice-G-reviews-meta.md`).
 
 ## 1. The journal's formula
 
@@ -61,8 +61,42 @@ mirrored from our accepted-format BDA manuscript in the sibling repo (`bda/resea
 
 ## 6. Solo-reviewer workflow
 
-- Reading roadmap: `05-reading-roadmap.md` (tiered, ~4 weeks part-time).
+- Reading roadmap: `05-reading-roadmap.md` (tiered 4-week plan).
 - Writing order: sections 4 and 5 first (evidence-dense, table-driven), then 2–3, then
   1, 6–8, abstract last.
-- One person can hold the whole corpus if the master tables (T1–T3) stay canonical:
-  update `data/paper-inventory.csv` as the single source of truth and regenerate docs.
+- `data/paper-inventory.csv` is the single source of truth; regenerate derived docs with
+  the `scripts/` pipeline rather than editing them by hand.
+
+## 7. Positioning (verified against the review landscape, slice G)
+
+The target journal already hosts **one** PINN review — Luo et al. 2025
+(DOI:10.1007/s10462-025-11322-7), scoped to *PDE-problem methods* (forward/inverse) with a
+problem×architecture×loss×training taxonomy, ~250+ citations. The 13 verified reviews
+(Karniadakis 2021 NRP; Cuomo 2022 JSC; Willard 2022 ACM CSUR; 2025–2026 PIML and
+operator-learning surveys) share one organizing axis — "how physics enters the model" —
+and flag the same gaps (theory, benchmarks, UQ, training reliability). The only
+bibliometric survey stops at 2022.
+
+**Our differentiator (unoccupied as of 2026-10):** a **cross-industry, application-oriented
+meta-survey** mapping *who uses PINNs → for which problem classes → enforcing which exact
+physics → through which enforcement mechanism → with what evidence level*, integrating the
+operator-learning branch and the benchmark/theory reality checks (Grossmann 2024;
+risk-consistency 2025) into a single component-level synthesis with 2025–2026 currency.
+
+Draft contribution list for the abstract:
+1. An enforcement-mechanism taxonomy (soft / hard / weak-variational / energy / operator /
+   hybrid) applied uniformly across 100+ verified works from 2021–2026.
+2. Component-level comparison tables (architecture, loss weighting, sampling, training,
+   software) — the manuscript's backbone.
+3. A domain-by-domain adoption map (fluids, energy, climate, biomed, geoscience, materials,
+   finance) with evidence tiers from research benchmark to clinical/industrial pilot.
+4. A reliability synthesis: what benchmarks and theory actually license us to claim.
+5. A gap-driven future-research agenda.
+
+## 8. Risks & mitigations
+
+| Risk | Mitigation |
+|---|---|
+| Overlap with Luo 2025 (same venue) | cite and position explicitly in §1; differentiator is industry mapping + operator integration + evidence tiers |
+| Citation counts drift | re-verify all counts at submission; inventory carries verification flags |
+| Solo bandwidth | the corpus, tables, and reading roadmap are already solo-sized (4-week plan) |

@@ -87,3 +87,13 @@ _Compiled from scout reports; verbatim query strings._
 - "physics-informed" neural networks battery degradation state of health prognosis Nature Communications 2024
 - physics-informed neural network digital twin grid battery management system deployment 2025
 - Xu "Physics-informed neural networks for power systems" review Renewable Sustainable Energy Reviews 2026
+
+## Slice E
+
+- "physics-informed neural network hemodynamics blood flow Navier-Stokes"
+- "physics-informed neural networks seismic full waveform inversion Rasht-Behesht"
+- "Friha physics-informed neural networks healthcare use case"
+- "physics-informed neural networks tumor growth glioblastoma reaction-diffusion"
+- "physics-informed neural network cardiac digital twin clinical 2025 electrophysiology"
+- "physics-informed neural networks oil and gas industry application 2025"
+- (3 further queries were aborted by tool concurrency limits and re-issued within the above set; verification done via Semantic Scholar + Crossref APIs.)

@@ -10,10 +10,10 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 | Metric | Value |
 |---|---|
-| Unique verified papers | 78 |
-| Journal / conference / preprint | 60 / 13 / 5 |
-| Year distribution | 2018: 1, 2019: 1, 2020: 6, 2021: 13, 2022: 9, 2023: 11, 2024: 16, 2025: 14, 2026: 7 |
-| Distinct venues | 52 |
+| Unique verified papers | 92 |
+| Journal / conference / preprint | 73 / 14 / 5 |
+| Year distribution | 2018: 1, 2019: 1, 2020: 7, 2021: 16, 2022: 12, 2023: 11, 2024: 18, 2025: 18, 2026: 8 |
+| Distinct venues | 64 |
 | Cross-slice papers (surfaced by 2+ scouts) | 2 |
 
 ## 1. Foundations, theory & training methodology (slice A)
@@ -116,7 +116,22 @@ Every entry was verified against its publisher page or the Semantic Scholar API 
 
 ## 5. Biomedical, geoscience & civil applications (slice E)
 
-_Slice E pending._
+| ID | Domain | Physics enforced | Mechanism | Problem | Cites | Read |
+|---|---|---|---|---|---|---|
+| PINN-E01 | Civil/solid mechanics (construction) | Linear elasticity equilibrium with heterogeneous modulus | autodiff PDE residual + data loss (SciANN) | both | ~1253 (S2) | must-read |
+| PINN-E02 | Geoscience/seismic (oil-gas exploration) | Acoustic + elastic wave equations | cCNN autodiff wave residual + seismogram data | both | ~412 (Crossref) | must-read |
+| PINN-E05 | Biomedical/cardiac EP (hospital) | Monodomain + Aliev-Panfilov ionic model | autodiff PDE residual + sparse Vm data | inverse | ~57 (Crossref) | must-read |
+| PINN-E08 | Biomedical/oncology (hospital) | Reaction-diffusion tumor-invasion PDE | autodiff PDE residual + single-3D-MRI data | inverse | ~33 (Crossref) | must-read |
+| PINN-E03 | Geoscience/subsurface flow (oil-gas) | Nonlinear diffusivity + Biot poroelasticity | autodiff PDE residual vs FEM baseline | both | ~118 (Crossref) | careful |
+| PINN-E04 | Hydrology/groundwater (agri-environmental) | Richardson-Richards unsaturated flow | monotonicity-constrained output + PDE residual | inverse | ~126 (Crossref) | careful |
+| PINN-E06 | Biomedical/cardiac imaging (hospital MRI) | Hyperelastic anisotropic energy potential | energy-functional loss + RBF output subspace | inverse | ~89 (Crossref) | careful |
+| PINN-E07 | Biomedical/cerebrovascular hemodynamics (hospital) | 1D reduced-order blood-flow model | ROM-PINN hybrid + sparse TCD data | inverse | ~126 (Crossref) | careful |
+| PINN-E09 | Biomedical/healthcare survey | n/a survey of embedded PDE-ODE constraints | n/a categorizes residual-loss/hybrid/operator approaches | survey | ~10 (Crossref) | careful |
+| PINN-E10 | Biomedical/cardiac digital twins (pre-clinical) | Eikonal equation | meta-trained PINN fast CV-field inference | operator | ~1 (Crossref) | careful |
+| PINN-E11 | Biomedical/cardiovascular wearables (clinical pilot) | 2- and 3-element Windkessel ODEs | ODE residual + wearable bioimpedance data | inverse | ~1 (Crossref) | careful |
+| PINN-E12 | Oil-gas/production control (industrial) | Gas-lift well dynamic ODE model | PINC ODE residual + MPC coupling | both | ~27 (Crossref) | methods+results |
+| PINN-E14 | Civil/SHM bridges | Nonlinear MDOF spring equations of motion | EOM residual + measured response data | inverse | ~37 (Crossref) | methods+results |
+| PINN-E13 | Construction/geotech tunneling | Segmental-lining uplift soil-structure mechanics | PDE residual on lining-uplift model | both | ~13 (Crossref) | skim |
 
 ## 6. Materials, manufacturing, finance & industrial ecosystem (slice F)
 

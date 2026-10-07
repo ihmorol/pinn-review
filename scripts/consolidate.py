@@ -55,6 +55,8 @@ def parse_slice(path: Path):
         rec = dict(zip(COLUMNS[:-1], fields))
         rec["priority"] = re.sub(r"\D", "", rec["priority"]) or "5"
         rec["citations"] = rec["citations"].lstrip("~").strip()
+        if re.match(r"^10\.\d{4,9}/", rec["identifier"]):
+            rec["identifier"] = "DOI:" + rec["identifier"]
         rows.append(rec)
 
     q = re.search(r"^## Queries used\s*$(.*?)^## ", text, re.M | re.S)
